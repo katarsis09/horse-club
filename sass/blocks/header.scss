@@ -1,3 +1,66 @@
 .header {
     background-color: red;
+
+
+    &__top {
+        @media (min-width: $tablet-width) {
+            display: flex;
+            justify-content: space-between;
+            width: 627px;
+            margin: 0 auto;
+        }
+    }
+
+
+    &__phone {
+
+        color: #ffffff;
+
+        @media (min-width: $mobile-landscape-width) {
+            width: 110px;
+        
+        }
+    
+        @media (min-width: $tablet-width) {
+            width: 142px;
+        }
+    
+    
+        @media (min-width: $tablet-landscape-width) {
+            width: 186px;
+        }
+    
+       
+    }
+
+    &__logo {
+        width: 89px;
+        height: 29px;
+    
+        @media (min-width: $tablet-width) {
+            width: 120px;
+        }
+    
+    
+        @media (min-width: $tablet-landscape-width) {
+            width: 152px;
+        }
+    
+
+    }
+
+    &__img {
+        width: 89px;
+        height: 29px;
+
+        @media (min-width: $tablet-width) {
+            width: 120px;
+            height: 39px;
+        }
+
+        @media (min-width: $tablet-landscape-width) {
+            width: 152px;
+            height: 49px;
+        }
+    }
 }
