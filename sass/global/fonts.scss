@@ -1,26 +1,35 @@
-/* MEDIUM Geometria */
+/* REGULAR ROBOTO */
 @font-face {
-  font-family: "Geometria";
-  font-style: normal;
-  font-weight: 500;
-  src: local(""), url("../fonts/geometria-medium.woff2") format("woff2"),
-    url("../fonts/geometia-medium.woff") format("woff");
+  font-family: "Roboto";
+  font-style: regular;
+  font-weight: 400;
+  src: local(""), url("../fonts/RobotoRegular.woff2") format("woff2"),
+    url("../fonts/RobotoRegular.woff") format("woff");
 }
 
-/* BOLD Geometria */
+/* BOLD Philosopher */
 @font-face {
-  font-family: "Geometria";
-  font-style: normal;
+  font-family: "Philosopher";
+  font-style: bold;
   font-weight: 700;
-  src: local(""), url("../fonts/geometria-bold.woff2") format("woff2"),
-    url("../fonts/geometria-bold.woff") format("woff");
+  src: local(""), url("../fonts/philosopher.woff2") format("woff2"),
+    url("../fonts/philosopher.woff") format("woff");
 }
 
-/* REGULAR Caveat */
+/* REGULAR Alegreya */
 @font-face {
-  font-family: "Caveat", cursive;
+  font-family: "Alegreya";
   font-style: normal;
   font-weight: 400;
-  src: local(""), url("../fonts/caveat_brush.woff2") format("woff2"),
-    url("../fonts/caveat_brush.woff") format("woff");
+  src: local(""), url("../fonts/alegreya-sans-sc-regular.woff2") format("woff2"),
+    url("../fonts/alegreya-sans-sc-regular.woff") format("woff");
+}
+
+/* REGULAR Montserrat */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""), url("../fonts/montserrat-regular.woff2") format("woff2"),
+    url("../fonts/montserrat-regular.woff") format("woff");
 }
