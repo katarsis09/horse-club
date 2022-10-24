@@ -1,13 +1,16 @@
 .main-nav {
     position: relative;
     width: auto;
-    min-height: 120px;
-    // background-color: #0D0D0D;
-
+    // min-height: 120px;
+   
     
     @media (min-width: $tablet-width) {
         width: 345px;
-        
+        padding-top: 25px;
+    }
+
+    @media (min-width: $tablet-landscape-width) {
+      padding-top: 25px;
     }
 
     &__list {
@@ -17,7 +20,23 @@
     }
 
 
-    &__toogle {
+ 
+
+
+    &__wrapper {
+      background-color: #0D0D0D;
+      width: 100%;
+      display: none;
+
+      @media (min-width: $tablet-width) {
+        display: block;
+        background-color: transparent;
+      }
+
+    }
+
+
+    &__toggle {
 
         
         position: absolute;
@@ -25,30 +44,48 @@
         right: 0;
         z-index: 2;
         display: block;
-        width: 10px;
+        padding-top: 7px;
         height: 10px;
         background-color: transparent;
         cursor: pointer;
         border: none;
-          
-
 
         @media (min-width: $tablet-width) {
-            display: none;
+          display: none;
         }
+
+        
     }
+
+
 
 
     &--closed .main-nav__toggle::before {
         content: "";
         position: absolute;
-        top: 5px;
-        right: 105px;
+        top: 11px;
+        right: 65px;
         width: 10px;
         height: 2px;
         background-color: #008139;
         box-shadow: 0 4px 0 0 #008139, 0 8px 0 0 #008139;
+
+      
       }
+
+      &--closed .site-list__item {
+        @media (min-width: $tablet-width) {
+          // display: none;
+          font-family: "Roboto", sans-serif;
+          font-size: 11px;
+          line-height: 13px;
+          font-weight: 400;
+          color: #202020;
+        }
+
+       
+      }
+
 
 
     &--opened .main-nav__toggle {
@@ -60,9 +97,9 @@
         &::after {
           content: "";
           position: absolute;
-          top: 24px;
-          left: 18px;
-          width: 10px;
+          top: 28px;
+          right: 21px;
+          width: 17px;
           height: 2px;
           background-color: #ffffff;
         }
@@ -81,8 +118,9 @@
     &__menu {
         // width: 77px;
         // height: 29px;
-        color: #ffffff;
-        padding-left: 18px;
+        position: relative;
+        color: #202020;;
+        padding: 6px 10px 8px 25px;
         border-radius: 3px;
         font-family: "Roboto";
         font-weight: 400;

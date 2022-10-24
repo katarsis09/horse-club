@@ -1,7 +1,11 @@
 .header {
     background-image: url("../img/header_m.jpg");
     background-repeat: no-repeat;
+    background-size: cover;
     height: 560px;
+    margin-bottom: 56px;
+   
+    
 
     @media (min-width: $mobile-landscape-width) {
         background-image: url("../img/header_ml.jpg");
@@ -34,50 +38,77 @@
         padding-top: 15px;
         padding-left: 10px;
         padding-right: 10px;
+        margin-bottom: 63px;
 
         @media (min-width: $tablet-width) {
             display: flex;
             justify-content: space-between;
-            width: 627px;
-            margin: 0 auto;
+            
+            // margin: 0 auto;
+            align-items: center;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-bottom: 41px;
         }
 
         @media (min-width: $tablet-landscape-width) {
-            width: 960px;
+            min-width: 960px;
+            margin-bottom: 61px;
         }
 
         @media (min-width: $desktop-width) {
-            width: 1170px;
+            min-width: 1170px;
+            padding-left: 375px;
+            padding-right: 375px;
         }
     }
 
 
     &__phone {
 
-        color: #ffffff;
+        color: #202020;
         display: none;
+        font-family: "Roboto";
+        font-size: 11px;
+        line-height: 13px;
+        font-weight: 800;
+        padding-top: 4px;
 
         @media (min-width: $mobile-landscape-width) {
             display: block;
             width: 110px;
-        
+            
         }
     
         @media (min-width: $tablet-width) {
             width: 142px;
+            padding-top: 11px;
         }
     
     
         @media (min-width: $tablet-landscape-width) {
             width: 186px;
+            font-size: 18px;
+            line-height: 21px;
+            padding-top: 20px;
+
         }
     
        
     }
 
+    &__info {
+        color: #7D808A;
+        font-size: 9px;
+        line-height: 11px;
+        font-weight: 400;
+    }
+
     &__logo {
         width: 89px;
         height: 29px;
+        display: block;
+        margin-right: 24px;
     
         @media (min-width: $tablet-width) {
             width: 120px;
@@ -111,6 +142,32 @@
         font-weight: 700;
         font-size: 24px;
         line-height: 27px;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-top: 0;
+        margin-bottom: 31px;
+
+        @media (min-width: $mobile-landscape-width) {
+            padding-left: 63px;
+            padding-right: 63px;
+        }
+
+        @media (min-width: $tablet-width) {
+            font-size: 37px;
+            line-height: 41px;
+            padding-left: 20px;
+            padding-right: 0;
+            width: 406px;
+        }
+
+        @media (min-width: $desktop-width) {
+            font-size: 57px;
+            line-height: 61px;
+            width: 625px;
+            font-weight: 900;
+        }
+
+
     }
 
     &__descr {
@@ -119,28 +176,60 @@
         color: #646464;
         font-size: 13px;
         line-height: 18px;
+        margin-bottom: 25px;
+        padding-left: 31px;
+        padding-right: 31px;
+
+        @media (min-width: $tablet-width) {
+            font-size: 16px;
+            line-height: 22px;
+            width: 406px;
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-bottom: 20px;
+        }
+
+        @media (min-width: $tablet-landscape-width) {
+            font-size: 20px;
+            line-height: 28px;
+        }
     }
 
     &__bottom {
         text-align: center;
+        @media (min-width: $tablet-width) {
+            text-align: start;
+        }
+
+        @media (min-width: $desktop-width) {
+            padding-left: 375px;
+        }
+
     }
 
     &__order {
          text-transform: uppercase;
          font-family: "Montserrat";
-         font-weight: 400;
+         font-weight: 600;
          font-size: 10px;
          line-height: 10px;
-
          width: 170px;
          height: 43px;
-         color: $white;
+         color: #6A5300;
          background: linear-gradient(180deg, #9BCFFF 0%, #FFF383 0.01%, #FFC700 100%);
          box-shadow: 0px 4px 0px 0px #C89C00;
          border-radius: 5px;
          text-align: center;
          transition: all 0.5s ease;
          cursor: pointer;
+
+
+         @media (min-width: $tablet-width) {
+            margin-left: 20px;
+            width: 180px;
+            height: 45px;
+            
+         }
 
     }
 }

@@ -1,0 +1,93 @@
+.about {
+    text-align: center;
+    background-color: #ffffff;
+    margin-bottom: 70px;
+
+    &__title {
+       font-family: "Philosopher", sans-serif; 
+       font-size: 21px;
+       line-height: 21px;
+       font-weight: 400;
+       margin-bottom: 35px;
+
+       @media (min-width: $mobile-landscape-width) {
+        font-size: 27px;
+        line-height: 27px;
+       }   
+
+    }
+
+    &__list {
+        margin: 0;
+        margin-bottom: 30px;
+
+        @media (min-width: $mobile-landscape-width) {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            align-items: start;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 35px;
+
+        @media (min-width: $mobile-landscape-width) {
+            margin-bottom: 30px;
+        }
+
+    }
+
+    &__number {
+        color: #008139;
+        font-family: "Philosopher", sans-serif; 
+        font-size: 27px;
+        line-height: 27px;
+        font-weight: 900;
+        margin-bottom: 10px;
+
+        @media (min-width: $tablet-width) {
+            font-size: 32px;
+            line-height: 32px;
+
+        }
+    }
+
+    &__description {
+        margin: 0;
+        font-family: "Roboto", sans-serif; 
+        font-size: 12px;
+        line-height: 18px;
+        font-weight: 700;
+        padding-left: 50px;
+        padding-right: 50px;
+
+        @media (min-width: $mobile-landscape-width) {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+    }
+
+
+    &__info {
+        color: #7E7E7E;
+        font-family: "Roboto", sans-serif; 
+        font-size: 12px;
+        line-height: 18px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    &__img {
+        @media (min-width: $tablet-width) {
+            background-image: url("../img/about_t.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 273px;
+        }
+    }
+
+
+}
