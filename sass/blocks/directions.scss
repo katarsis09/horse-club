@@ -1,0 +1,40 @@
+.directions {
+text-align: center;
+
+    &__title {
+       font-family: "Philosopher", sans-serif; 
+       font-size: 21px;
+       line-height: 21px;
+       font-weight: 400;
+       margin-bottom: 35px;
+
+       @media (min-width: $mobile-landscape-width) {
+        font-size: 27px;
+        line-height: 27px;
+       }
+
+       @media (min-width: $desktop-width) {
+        font-size: 40px;
+        line-height: 40px;
+       }
+    }
+
+    &__subtitle {
+       font-family: "Roboto", sans-serif; 
+       font-size: 14px;
+       line-height: 25px;
+       font-weight: 400;
+       margin-bottom: 21px;
+    }
+
+    &__descr {
+        font-size: 13px;
+        line-height: 20px;
+        color: #7E7E7E;
+    }
+
+
+    &__img {
+        margin-bottom: 15px;
+    }
+}

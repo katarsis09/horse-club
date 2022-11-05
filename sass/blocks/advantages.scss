@@ -1,0 +1,218 @@
+.advantages {
+
+    padding-left: 15px;
+    padding-right: 15px;
+
+    &__wrapper {
+        text-align: center;
+    }
+   
+
+    &__title {
+       font-family: "Philosopher", sans-serif; 
+       font-size: 21px;
+       line-height: 21px;
+       font-weight: 400;
+       margin-bottom: 35px;
+
+       @media (min-width: $mobile-landscape-width) {
+        font-size: 27px;
+        line-height: 27px;
+       }
+
+       @media (min-width: $desktop-width) {
+        font-size: 40px;
+        line-height: 40px;
+       }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: $mobile-landscape-width) {
+            flex-direction: row;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 458px;
+            margin: 0 auto;
+        }
+
+        @media (min-width: $tablet-width) {
+            width: 757px;
+            padding-left: 5px;
+            padding-right: 5px;
+            align-items: baseline;
+        }
+
+        @media (min-width: $tablet-landscape-width) {
+            width: 960px;
+        }
+
+        @media (min-width: $desktop-width) {
+            width: 1171px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+
+        @media (min-width: $mobile-landscape-width) {
+            width: 217px;
+        }
+
+        @media (min-width: $tablet-width) {
+            width: 180px;
+        }
+
+        @media (min-width: $tablet-landscape-width) {
+            width: 225px;
+        }
+
+        @media (min-width: $desktop-width) {
+            width: 271px;
+        }
+
+
+    }
+
+    &__img {
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 0 auto;
+        margin-bottom: 10px;
+    }
+
+    &__map {
+        background-image: url("../img/map_m.jpg");
+        height: 60px;
+        width: 171px;
+
+        @media (min-width: $mobile-landscape-width) {
+            background-image: url("../img/map_ml.jpg");
+            height: 60px;
+            width: 86px;
+        }
+
+        @media (min-width: $tablet-width) {
+            background-image: url("../img/map_t.jpg");
+            height: 60px;
+            width: 60px;
+        }
+
+        @media (min-width: $desktop-width) {
+            background-image: url("../img/map_d.jpg");
+            height: 95px;
+            width: 113px;
+        }
+    }
+
+    &__rest {
+        background-image: url("../img/rest_m.jpg");
+        height: 67px;
+        width: 192px;
+
+        @media (min-width: $mobile-landscape-width) {
+            background-image: url("../img/rest_ml.jpg");
+            height: 67px;
+            width: 106px;
+        }
+
+        @media (min-width: $tablet-width) {
+            background-image: url("../img/rest_t.jpg");
+            height: 78px;
+            width: 102px;
+        }
+
+        @media (min-width: $desktop-width) {
+            background-image: url("../img/rest_d.jpg");
+            height: 98px;
+            width: 156px;
+        }
+    }
+
+    &__coach {
+        background-image: url("../img/coach_m.jpg");
+        height: 90px;
+        width: 106px;
+
+        @media (min-width: $mobile-landscape-width) {
+            background-image: url("../img/coach_ml.jpg");
+            height: 73px;
+            width: 60px;
+        }
+
+        @media (min-width: $tablet-width) {
+            background-image: url("../img/coach_t.jpg");
+            height: 73px;
+            width: 50px;
+        }
+
+        @media (min-width: $desktop-width) {
+            background-image: url("../img/coach_d.jpg");
+            height: 118px;
+            width: 96px;
+        }
+    }
+
+    &__parking {
+        background-image: url("../img/parking_m.jpg");
+        height: 60px;
+        width: 106px;
+
+        @media (min-width: $mobile-landscape-width) {
+            background-image: url("../img/parking_ml.jpg");
+            height: 78px;
+            width: 96px;
+        } 
+
+        @media (min-width: $tablet-width) {
+            background-image: url("../img/parking_t.jpg");
+            height: 92px;
+            width: 93px;
+        }
+
+        @media (min-width: $desktop-width) {
+            background-image: url("../img/parking_d.jpg");
+            height: 124px;
+            width: 151px;
+        }
+    }
+
+    &__subtitle {
+        margin-bottom: 10px;
+        font-family: "Roboto", sans-serif; 
+        font-size: 14px;
+        line-height: 20px;
+        font-weight: 700;
+
+        @media (min-width: $mobile-landscape-width) {
+            font-size: 15px;
+        }
+
+        @media (min-width: $desktop-width) {
+            font-size: 19px;
+            line-height: 23px;
+        }
+    }
+
+    &__descr {
+        font-family: "Roboto", sans-serif; 
+        font-size: 13px;
+        line-height: 20px;
+        font-weight: 400;
+        color: #7E7E7E;
+
+        @media (min-width: $desktop-width) {
+            font-size: 15px;
+            line-height: 23px;
+        }
+    }
+
+
+    &__item:not(last-child) {
+        margin-bottom: 45px;
+    }
+
+}
