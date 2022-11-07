@@ -1,0 +1,22 @@
+.question {
+    text-align: center;
+    &__title {
+       font-family: "Philosopher", sans-serif; 
+       font-size: 22px;
+       line-height: 22px;
+       font-weight: 400;
+       margin-bottom: 15px;
+    }
+
+
+    &__descr {
+        font-family: "Roboto", sans-serif; 
+        font-size: 13px;
+        line-height: 21px;
+        font-weight: 400;
+        margin-bottom: 20px;
+        color: #7E7E7E;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+}
